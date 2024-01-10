@@ -1,0 +1,309 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  background-color: #3498db; /* Update with your desired header color */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar img{
+  
+  height: 18%;
+  width: 18%;
+}
+.navbar h1{
+  font-size: x-large;
+  margin-top: -150px;
+  text-align:center;
+}
+.navbar h2{
+  font-size: larger;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.navbarNav {
+  width: 100%;
+  margin-top: 0.75rem;
+  overflow-y: hidden;
+}
+
+.navbarListItems {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbarListItem {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbarListItemName,
+.navbarListItemNameActive {
+  margin-top: 0.25rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ecf0f1; /* Update with your desired text color */
+}
+
+.navbarListItemNameActive {
+  color: #ffffff; /* Update with your desired active text color */
+}
+
+/* Explore Page Styles */
+.explore {
+  margin: 1rem;
+  padding-top: 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .explore {
+    margin: 3rem;
+  }
+}
+
+.exploreHeading,
+.exploreCategoryHeading {
+  font-weight: 700;
+  color: #2c3e50; /* Update with your desired text color */
+}
+
+.exploreCategoryHeading {
+  margin-top: 3rem;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: auto;
+}
+
+.tile {
+  text-align: center;
+  width: 200%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #ecf0f1; /* Update with your desired tile background color */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .tiles {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.tile:hover {
+  background-color: #3498db; /* Update with your desired hover color */
+  transform: scale(1.05);
+}
+
+.tileImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.tile p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 1rem 0;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50; /* Update with your desired text color */
+}
+
+.tile a {
+  color: #e74c3c; /* Update with your desired link color */
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Favorites Tile Styles */
+.favorites-tile {
+  width: 25%;
+  margin-top: 0px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+}
+
+.favorites-tile h2 {
+  font-weight: 700;
+  color: #2c3e50; /* Update with your desired text color */
+}
+
+.favorites-tile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorites-tile li {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #2c3e50; /* Update with your desired text color */
+}
+
+/* Add the following styles for the modal dialog */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  outline: none;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ReactModal__Content h2 {
+  margin-bottom: 10px;
+  color: #2c3e50; /* Update with your desired text color */
+}
+
+.ReactModal__Content p {
+  margin: 8px 0;
+  color: #34495e; /* Update with your desired text color */
+}
+
+.ReactModal__Content button {
+  background-color: #3498db; /* Update with your desired button color */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Advanced Search Form Styles */
+.advanced-search-container {
+  width: 150%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advanced-search-container h2 {
+  margin-bottom: 10px;
+  color: #2c3e50; /* Update with your desired text color */
+}
+
+.advanced-search-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50; /* Update with your desired text color */
+}
+
+.advanced-search-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.advanced-search-container button {
+  margin-left: 10px;
+  background-color: #3498db; /* Update with your desired button color */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  font-weight: bold;
+}
+
+/* Update button styles on hover */
+.advanced-search-container button:hover {
+  background-color: #2980b9; /* Update with your desired hover color */
+}
+
+/* Add any additional styles as needed */
+.advanced-search-button{
+  margin-left: 10px;
+  background-color: #3498db; /* Update with your desired button color */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  font-weight: bold;
+
+
+}
+.advanced-search-button:hover{
+  background-color: #2c3e50;
+}
+.search-bar button{
+  align-left: 10px;
+  background-color: #3498db; /* Update with your desired button color */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  font-weight: bold;
+
+}
+.search-bar button:hover{
+  background-color: #2c3e50;
+}
+.search-bar{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+.search-bar input{
+  width: 60%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
